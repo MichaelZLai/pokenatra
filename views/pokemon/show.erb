@@ -5,7 +5,9 @@
 <ul>
   <li>Type: <%= @pokemon.poke_type %></li>
   <li>Combat Power: <%= @pokemon.cp %></li>
-  <li>Master: <%= @trainer %></li>
+  <% if @trainer %>
+    <li>Master: <%= @trainer.name %></li>
+   <% end %>
 </ul>
 
 <!-- Edit button -->

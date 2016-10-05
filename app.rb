@@ -1,7 +1,7 @@
 require "sinatra"
 require "sinatra/reloader"
 require "active_record"
-# require 'pry'
+require 'pry'
 
 require_relative "db/connection"
 require_relative "models/pokemon"
@@ -86,9 +86,8 @@ end
 # KEEP THIS AT THE BOTTOM SO IT ID EVERYTHING
 get "/:id" do
   @pokemon = Pokemon.find(params[:id])
-  @trainer = @pokemon.trainer.name
+  @trainer =  @pokemon.trainer
   erb :"pokemon/show"
 end
 #
-# binding.pry
-# puts "done"
+puts "done"
