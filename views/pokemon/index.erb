@@ -1,0 +1,11 @@
+<h2>Pokemon!</h2>
+<ul>
+<% @pokemon.each do |pokemon| %>
+  <li><a href="/<%= pokemon.id %>"><%= pokemon.name %></a></li>
+<% end %>
+</ul>
+
+<!-- Add New Pokemon button -->
+<form action="/new">
+  <button>Add New Pokemon!</button>
+</form>
