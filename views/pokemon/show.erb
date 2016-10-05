@@ -12,6 +12,12 @@
   <button>Edit Pokemon</button>
 </form>
 
+<!-- Delete button -->
+<form action="/<%= @pokemon.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+  <button type="submit">Delete Pokemon</button>
+</form>
+
 <!-- Back to Pokemon List button -->
 <form action="/">
   <button>Back to Pokemon list</button>
