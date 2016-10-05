@@ -1,0 +1,24 @@
+<img class="pokemon" src="<%= @trainer.img_url %>">
+
+<h2><%= @trainer.name %></h2>
+
+<ul>
+  <li>Level: <%= @trainer.level %></li>
+  <li>Pokemon Owned: <%= @pokemons.join(", ") %></li>
+</ul>
+
+<!-- Edit button -->
+<form action="/trainers/<%= @trainer.id %>/edit">
+  <button>Edit Trainer</button>
+</form>
+
+<!-- Delete button -->
+<form action="/trainers/<%= @trainer.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+  <button type="submit">Delete Trainer</button>
+</form>
+
+<!-- Back to Trainer List button -->
+<form action="/trainers">
+  <button>Back to Trainer list</button>
+</form>

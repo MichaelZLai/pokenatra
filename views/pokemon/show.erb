@@ -1,10 +1,11 @@
-<img src="<%= @pokemon.img_url %>">
+<img class="pokemon" src="<%= @pokemon.img_url %>">
 
 <h2><%= @pokemon.name %></h2>
 
 <ul>
   <li>Type: <%= @pokemon.poke_type %></li>
   <li>Combat Power: <%= @pokemon.cp %></li>
+  <li>Master: <%= @trainer %></li>
 </ul>
 
 <!-- Edit button -->

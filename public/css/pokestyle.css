@@ -1,13 +1,13 @@
 /*
 
-Uncomment for sick pokestyle
+/*Uncomment for sick pokestyle*/
 
 @font-face {
   font-family: "Pokemon";
   src: url(../fonts/PokemonSolid.ttf) format("truetype");
 }
 
-a, p, h2, h3 {
+a, p, h2, h3, ul, li{
   color: rgb(215, 215, 0);
   text-shadow: rgb(35, 75, 180) 3px 3px 1px;
   -webkit-text-stroke: 2px rgb(55, 95, 200);
@@ -17,12 +17,15 @@ a, p, h2, h3 {
 
 
 body {
-  background-image: url(../images/pokedex.png);
+  background-image: url("http://rmzhanxian.com/data/out/67/67438565-pokemon-wallpaper.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
   font-size: 200%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 a:hover {
@@ -40,7 +43,7 @@ a:hover {
 }
 
 .pokemon{
-  min-width: 375px;
+  /*min-width: 375px;*/
   background-color: rgb(255, 255, 255);
   padding: 10px;
   margin: 40px;
@@ -70,4 +73,4 @@ a:hover {
     text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
     background-color: rgba(0, 0, 0, .1);
   }
-}*/
+}

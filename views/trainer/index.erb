@@ -1,0 +1,16 @@
+<h2>Select a Trainer</h2>
+<ul>
+<% @trainers.each do |trainer| %>
+  <li><a href="/trainers/<%= trainer.id %>"><%= trainer.name %></a></li>
+<% end %>
+</ul>
+
+<!-- Add New Trainer button -->
+<form action="/trainers/new">
+  <button>Create New Trainer!</button>
+</form>
+
+<!-- Back to Pokemon List -->
+<form action="/">
+  <button>Back to Pokemon list</button>
+</form>
